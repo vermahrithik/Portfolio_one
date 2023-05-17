@@ -1,0 +1,337 @@
+https://www.youtube.com/watch?v=C8-gjwdmZDs
+
+loco with scrollTrigger codepen :
+https://codepen.io/GreenSock/pen/ExPdqKy
+(note : replace all scroll smooth with #main) & remove from red panel to part before 2nd last comment and put all in a function and call after closing the function , in the next line below.  
+https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/
+https://github.com/locomotivemtl/locomotive-scroll
+
+https://abhishekjha.me/?ref=awww
+
+😀   😀   😀
+Closing Sidebar by Clicking Outside using Javascript | Auto Close Sidebar When click on Link :
+https://www.youtube.com/watch?v=iP63fDXk-W8
+😀   😀   😀
+
+
+https://www.youtube.com/watch?v=CUi014aYdyA
+
+https://www.youtube.com/watch?v=htGfnF1zN4g
+
+https://github.com/nilendrapatel1317?tab=repositories
+
+https://azumbrunnen.me/
+
+Modern Marquee Effect ft. awwwards featured websites, image moving hover effect :
+https://www.youtube.com/watch?v=-7lyuL53qV0
+
+king :
+https://youtube.com/shorts/UYzCjroDuOc?feature=share
+
+//--------------------------------------------------------------------
+
+var s11_words=document.querySelector('.s-11-words');
+s11_words.addEventListener('mouseover',function(){
+    document.querySelectorAll(".s-11-word span")
+    .forEach(function(elem){
+        elem.addEventListener("mousemove",function(){
+            elem.style.paddingTop=`0vh`;
+        })
+    })
+})
+s11_words.addEventListener('mouseout',function(){
+    document.querySelectorAll(".s-11-word span")
+    .forEach(function(elem){
+        elem.addEventListener("mouseout",function(){
+            elem.style.paddingTop=`15vh`;
+    })
+    })
+})
+
+//--------------------------------------------------------------------
+
+// var cards=document.querySelector('.s-5-2');
+// cards.addEventListener('mouseover',function(){
+//     document.querySelector('.s-5-2-o1 h4').style.marginTop="0vh";
+//     document.querySelector('.s-5-2-o1').style.opacity="1";
+//     document.querySelector('.s-5-2-o1').style.marginTop="0vh";
+//     document.querySelector('.s-5-2-o1-1 h4').style.marginTop="0vh";
+//     document.querySelector('.s-5-2-o1-1').style.opacity="1";
+//     document.querySelector('.s-5-2-o1-1').style.marginTop="0vh";
+//     console.log("chutiye")
+// })
+// cards.addEventListener('mouseout',function(){
+//     document.querySelector('.s-5-2-o1 h4').style.marginTop=`10vh`;
+//     document.querySelector('.s-5-2-o1').style.opacity="0";
+//     document.querySelector('.s-5-2-o1-1 h4').style.marginTop=`10vh`;
+//     document.querySelector('.s-5-2-o1-1').style.opacity="0";
+// })
+// // element.addEventListener("click", function() {
+// //     document.getElementById("demo").innerHTML = "Hello World";
+// //   });
+
+//--------------------------------------------------------------------
+
+.from(".s-2-line",{
+    scrollTrigger:{
+        trigger:".s-2-line",
+        scroller:"#main",
+        markers:true,
+        start:"100% 67%",
+        end:"100% 0%",
+        scrub:4,
+    },
+    // y:-10,
+    ease: Expo.easeInOut,
+    stagger:0.3,
+    scale:2,
+    rotate:359,
+    duration:1
+})
+
+
+/* .reveal-2{
+    height: 10vh;
+    width: 30vh;
+    background-color: #4e2c3f;
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.reveal-2 h2{
+    position: absolute;
+    top: 100%;
+    transition: all ease 0.3s;
+}
+.reveal-2:hover h2{
+    top: 0%;
+} */
+
+
+// const log=document.querySelectorAll("path");
+// for(i=0;i<log.length;i++){
+//     console.log(`letter${i} is ${log[i].getTotalLength()}`);
+// }
+
+
+
+
+
+///-------------------------------------------------------------------------------------------------
+
+.s-5-1-options{
+    position: absolute;
+    bottom: 20.5%;
+    left: 6.5%;
+    height: 20%;
+    width: 14%;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-between;
+}
+.s-5-1-o1{
+    height: 23%;
+    width: fit-content;
+    border-radius: 3vw;
+    border: 1px solid #fcfaf8;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.s-5-1-o1-1{
+    height: 23%;
+    width: fit-content;
+    border-radius: 3vw;
+    border: 1px solid #fcfaf8;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.s-5-1-o1 h4{
+    font-family: gilli;
+    font-size: 1.4vh;
+    font-weight: 100;
+    padding: 0vh 2vh;
+    /* white-space: nowrap; */
+    text-transform: uppercase;
+}
+.s-5-1-o1-1 h4{
+    font-family: gilli;
+    font-size: 1.4vh;
+    font-weight: 100;
+    padding: 0vh 1.7vh;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+.s-5-1-o2{
+    height: 45%;
+    width: 95%;
+    border-radius: 3vw;
+    border: 1px solid #fcfaf8;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.s-5-1-o2 h2{
+    font-family: gilli;
+    font-size: 3.5vh;
+    font-weight: 600;
+    /* padding: 0vh 2.5vh; */
+    text-transform: capitalize;
+    color: #4e2c3f;
+}
+.s-5-1-o2 span{
+    font-family: mazius;
+}
+.s-5-1-o2-arrow{
+    position: absolute;
+    right: -50%;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.s-5-1-o2-arrow svg{
+    height: 35%;
+    width: 35%;
+}
+
+///=========================================================================================
+
+.s-5-2-options{
+    position: absolute;
+    bottom: 21.5%;
+    right: 25%;
+    height: 20%;
+    width: 14%;
+    border-radius: 1vw;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+.s-5-2-o1{
+    position: absolute;
+    height: 23%;
+    width: fit-content;
+    border-radius: 3vw;
+    border: 1px solid #fcfaf8;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all ease 0.3s;
+    /* margin-top: 10vh; */
+    /* opacity: 0; */
+}
+.s-5-2-o1-1{
+    height: 23%;
+    width: fit-content;
+    border-radius: 3vw;
+    border: 1px solid #fcfaf8;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all ease 0.3s;
+    /* margin-top: 10vh; */
+    /* opacity: 0; */
+}
+.s-5-2-o1 h4{
+    transition: all ease 0.3s;
+    font-family: gilli;
+    font-size: 1.4vh;
+    font-weight: 100;
+    padding: 0vh 2vh;
+    /* white-space: nowrap; */
+    text-transform: uppercase;
+    /* margin-top: 10vh; */
+    transition: all ease 0.3s;
+}
+.s-5-2-o1-1 h4{
+    font-family: gilli;
+    font-size: 1.4vh;
+    font-weight: 100;
+    padding: 0vh 1.7vh;
+    white-space: nowrap;
+    text-transform: uppercase;
+    /* margin-top: 10vh; */
+    transition: all ease 0.3s;
+}
+.s-5-2-o2{
+    position: absolute;
+    position: relative;
+    height: 16vh;
+    width: 23vh;
+    border-radius: 3vw;
+    border: 1px solid #fcfaf8;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 30%;
+    left: 350%;
+}
+.s-5-2-o2 h2{
+    font-family: gilli;
+    font-size: 3.5vh;
+    font-weight: 600;
+    /* padding: 0vh 2.5vh; */
+    text-transform: capitalize;
+    color: #4e2c3f;
+}
+.s-5-2-o2 span{
+    font-family: mazius;
+}
+.s-5-2-o2-arrow{
+    position: absolute;
+    right: -50%;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.s-5-2-o2-arrow svg{
+    height: 35%;
+    width: 35%;
+}
+
+// document.querySelectorAll('.op')
+//     .forEach(function(elem){
+//     elem.addEventListener("mousemove",function(){
+//         document.querySelector('.line-1').style.left=`100%`;
+//     })
+//     elem.addEventListener("mouseout",function(){
+//         document.querySelector('.line-1').style.left=`-100%`;
+//     })
+// })
+
+
+
+22 vlsi
+25 itc
+30 iot
